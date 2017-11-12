@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import json
-from abstraction import MecsNetworkView
+from nova.abstraction import MecsNetworkView
 
 def resource_query_transform(response):
     response
@@ -33,5 +33,5 @@ if '__main__' == __name__:
             [{"flow-id":"2"}]
         ]
     }
-    print("original:", test_data)
-    print("rsa:", resource_query_transform(test_data))
+    print("original:", json.dumps(test_data))
+    print("rsa:", json.dumps(resource_query_transform(test_data)))

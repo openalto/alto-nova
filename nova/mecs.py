@@ -2,7 +2,7 @@
 
 from itertools import groupby
 from pulp import LpAffineExpression, LpVariable, LpProblem, LpMaximize
-from view import Element, View
+from nova.view import Element, View
 
 class EquivTransformation(object):
     def __init__(self):

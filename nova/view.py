@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from lputil import paths_to_nzv, Constraint, construct_prob
+from nova.lputil import paths_to_nzv, Constraint, construct_prob
 
 class Element(object):
     def __init__(self, eid, nzv, bw):

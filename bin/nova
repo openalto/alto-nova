@@ -5,4 +5,5 @@ import json
 from nova.converter import resource_query_transform
 
 if '__main__' == __name__:
-    resource_query_transform(json.loads(sys.argv[1]))
+    # TODO: Error handling
+    print(json.dumps(resource_query_transform(json.loads(sys.argv[1]))))
